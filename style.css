@@ -1,0 +1,95 @@
+/* ------ CSS3 - Filter Blur & Text Stroke Hover Effect  ------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #c9c9c9;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+}
+
+#skillz {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5em;
+    color: rgb(124, 124, 124);
+    text-shadow: 1px 2px 1px  #3e3e3e;
+    filter: drop-shadow(-1px 6px 3px rgba(133, 133, 133, 0.5));
+    text-align: center;
+    margin-top: 600px;
+}
+
+.container {
+    width: 400px;
+    height: auto;
+    margin: 5px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(-1px 6px 3px rgba(133, 133, 133, 0.5));
+}
+.container > h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    filter: drop-shadow(-1px 6px 3px rgba(133, 133, 133, 0.5));
+}
+.grid {
+    display: grid;
+    grid-template-columns: 33% auto 33%;
+}
+.button {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: rgb(91, 91, 91);
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 25px;
+}
+svg {
+    width: 400px;
+    height: 200px;
+    filter: blur(200px);
+    position: absolute;
+    left: 0;
+    fill: rgb(91, 91, 91);
+    color: white;
+    transition: 3s;
+    top: -200px;
+}
+.button:hover svg {
+    filter: blur(0);
+    transition: 1s;
+}
+.button > span {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 400px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 15px;
+    padding: 30px;
+    transition: 3s;
+    color: rgb(91, 91, 91);
+    filter: blur(200px);
+}
+.button:hover span {
+    filter: blur(0);
+    transition: 1s;
+}
+.button p {
+    -webkit-text-stroke: 1px transparent;
+    transition: .5s;
+}
+.button:hover p {
+    -webkit-text-stroke: 1px rgb(211, 211, 211);
+    color: rgb(255, 255, 255);
+}
+
